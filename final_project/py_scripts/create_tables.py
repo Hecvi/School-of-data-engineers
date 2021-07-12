@@ -8,8 +8,8 @@ import jaydebeapi as pi
 
 def connection_to_server():
     con = pi.connect('oracle.jdbc.driver.OracleDriver',
-                      'jdbc:oracle:thin:itde1/bilbobaggins@de-oracle.chronosavant.ru:1521/deoracle',
-                      ['itde1', 'bilbobaggins'], '/home/itde1/ojdbc8.jar')
+                      'jdbc:oracle:thin:***',
+                      ['***', '***'], '/home/itde1/ojdbc8.jar')
     return con
 
 

@@ -122,7 +122,7 @@ ON (dwh.terminal_id = stg.terminal_id)
 WHEN MATCHED THEN UPDATE SET
     dwh.terminal_type = stg.terminal_type,
     dwh.terminal_city = stg.terminal_city,
-    dwh.terminal_address = stg.terminal_city,
+    dwh.terminal_address = stg.terminal_address,
     dwh.update_dt = stg.create_dt
 WHEN NOT MATCHED THEN INSERT(terminal_id, terminal_type, terminal_city,
                             terminal_address, create_dt, update_dt)
